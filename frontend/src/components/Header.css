@@ -1,0 +1,58 @@
+.header {
+  background: #8A0000;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.header__badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.header__actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botones */
+.btn {
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn--primary {
+  background: white;
+  color: #8A0000;
+  border: none;
+  font-weight: bold;
+}
+
+.btn--secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+}

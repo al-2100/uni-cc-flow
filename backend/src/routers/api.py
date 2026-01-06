@@ -28,9 +28,18 @@ def get_graph(db: Session = Depends(get_db)):
     y_counters = {i: 0 for i in range(1, 12)}
 
     for c in courses:
+        # Obtener lista de prerrequisitos con id y nombre
+        prerequisites = [{"id": req.id, "name": req.name} for req in c.requirements]
+        
         nodes.append({
             "id": c.id,
-            "data": { "label": f"{c.id}\n{c.name}", "credits": c.credits, "cycle": c.cycle },
+            "data": { 
+                "label": f"{c.id}\n{c.name}", 
+                "name": c.name,
+                "credits": c.credits, 
+                "cycle": c.cycle,
+                "prerequisites": prerequisites
+            },
             "position": { "x": c.cycle * 250, "y": y_counters.get(c.cycle, 0) * 150 },
             "type": "default"
         })

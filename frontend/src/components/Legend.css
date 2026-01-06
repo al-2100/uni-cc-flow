@@ -1,32 +1,43 @@
 .legend {
   background: white;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px 15px;
+  border-radius: 8px;
   border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   font-size: 13px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.legend strong {
+  margin-bottom: 4px;
 }
 
 .legend__item {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 
 .legend__color {
-  width: 15px;
-  height: 15px;
-  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
 }
 
 .legend__color--aprobado {
-  background: #d4edda;
-  border: 2px solid #28a745;
+  background: #28a745;
 }
 
-.legend__color--pendiente {
-  background: #fff;
-  border: 1px solid #777;
+.legend__color--desaprobado {
+  background: #dc3545;
+}
+
+.legend__color--disponible {
+  background: #007bff;
+}
+
+.legend__color--bloqueado {
+  background: #6c757d;
 }

@@ -3,7 +3,7 @@
   { "id": "BIC01", "name": "Introducción a la Computación", "credits": 2, "cycle": 1, "prerequisites": [] },
   { "id": "BMA01", "name": "Cálculo Diferencial", "credits": 5, "cycle": 1, "prerequisites": [] },
   { "id": "BMA03", "name": "Álgebra Lineal", "credits": 4, "cycle": 1, "prerequisites": [] },
-  { "id": "BQU01", "name": "Química I", "credits": 5, "cycle": 2, "prerequisites": [] },
+  { "id": "BQU01", "name": "Química I", "credits": 5, "cycle": 1, "prerequisites": [] },
   { "id": "BMA02", "name": "Cálculo Integral", "credits": 5, "cycle": 2, "prerequisites": ["BMA01"] },
   { "id": "BRC01", "name": "Redacción y Comunicación", "credits": 2, "cycle": 2, "prerequisites": [] },
   { "id": "CC112", "name": "Fundamentos de Programación", "credits": 4, "cycle": 2, "prerequisites": ["BIC01"] },
